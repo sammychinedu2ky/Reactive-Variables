@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import {MDBContainer} from 'mdbreact'
+import Nav from './components/Nav'
+import AddTodo from './components/AddTodo'
+import List from './components/List'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Nav/>
+   <MDBContainer>
+     <AddTodo/>
+     <List/>
+   </MDBContainer>
+   </>
   );
 }
 
